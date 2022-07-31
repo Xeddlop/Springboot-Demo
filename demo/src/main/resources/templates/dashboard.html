@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Profile</title>
+</head>
+<body>
+<p th:text="'Welcome！ ' + ${user.username} + '!'">Welcome!</p>
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Information</th>
+      <th>Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td th:text="${user.username}">null</td>
+      <td th:text="${user.password}">null</td>
+      <td th:text="${user.information}">null</td>
+      <td th:text="${user.priority}">null</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
